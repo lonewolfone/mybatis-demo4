@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--接口-->
+<mapper namespace="org.lanqiao.dao.IStudentDao">
+    <!--sql语句-->
+    <!--方法  参数类型-->
+    <insert id="addStudent" parameterType="org.lanqiao.pojo.Student">
+        insert  into stu(sname,sage,ssex) values (#{sname},#{sage},#{ssex})
+    </insert>
+</mapper>
